@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$Accent: #dec377;
+$Accent_dark: #ab8b2f;
+$Accent75: rgba(222, 195, 119, 0.75);
+$Accent40: rgba(222, 195, 119, 0.4);
+$Main: #f2f2f2;
+$Main_light: #ffffff;
+$Dark: rgba(0, 0, 0, 0.8);
+$Secondary: rgba(0, 0, 0, 0.5);
+$Detail: rgba(0, 0, 0, 0.1);
+$Inactive: rgba(0, 0, 0, 0.1);
+$MainText: rgba(0, 0, 0, 0.8);
+$Title: rgba(0, 0, 0, 0.9);
+$Subtitle: rgba(0, 0, 0, 0.75);
+$Secondary: rgba(0, 0, 0, 0.5);
+
+@mixin h1 {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: normal;
+    size: 40px;
+  }
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: $Title;
+}
+
+@mixin h2 {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: normal;
+    size: 28px;
+  }
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: $Title;
+}
+
+@mixin h3 {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: bold;
+    size: 26px;
+  }
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: $Title;
+}
+
+@mixin h4 {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: normal;
+    size: 26px;
+  }
+  line-height: 45px;
+  color: $Title;
+}
+
+@mixin h5 {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: normal;
+    size: 20px;
+  }
+  line-height: 30px;
+  color: $Title;
+}
+
+@mixin h6 {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: normal;
+    size: 18px;
+  }
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: $Title;
+}
+
+@mixin subtitle1 {
+  font: {
+    family: Lato;
+    style: normal;
+    weight: 600;
+    size: 17px;
+  }
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: $Subtitle;
+}
+
+@mixin subtitle2 {
+  font: {
+    family: Lato;
+    style: normal;
+    weight: normal;
+    size: 16px;
+  }
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: $Subtitle;
+}
+
+@mixin Maintext {
+  font: {
+    family: Lato;
+    style: normal;
+    weight: 300;
+    size: 15px;
+  }
+  line-height: 25px;
+  color: $MainText;
+}
+
+@mixin Seconrytext {
+  font: {
+    family: Lato;
+    style: normal;
+    weight: 300;
+    size: 14px;
+  }
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: $MainText;
+}
+
+@mixin Additionaltext {
+  font: {
+    family: Lato;
+    style: normal;
+    weight: 300;
+    size: 13px;
+  }
+  line-height: 20px;
+  color: $Secondary;
+}
+
+@mixin Button {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: bold;
+    size: 13px;
+  }
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $MainText;
+}
+
+@mixin Buttonadditional {
+  font: {
+    family: Lato;
+    style: normal;
+    weight: 600;
+    size: 12px;
+  }
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $Secondary;
+}
+
+@mixin Caption {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: 500;
+    size: 13px;
+  }
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: $Secondary;
+}
+
+@mixin Overline {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: normal;
+    size: 14px;
+  }
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $MainText;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
