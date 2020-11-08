@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,201 @@
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.header {
+  width: 100vw;
+  background: #ffffff;
+}
+
+.header__leng_and_phone {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.header__leng_and_phone-leng span {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.header__leng_and_phone-leng .select_language {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  outline: none;
+}
+
+.header__leng_and_phone-phone {
+  width: 100%;
+  max-width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__leng_and_phone-phone a {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.header__menu-nav {
+  width: 677px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.header__menu-nav_search {
+  position: absolute;
+  right: -9%;
+}
+
+.header__menu-nav--item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
+
+.header__menu-nav--item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu-nav--item-list-link {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .first__screen {
+  width: 100%;
+  height: 650px;
+  background: url("/assets/main_screen/Главный экран.png") no-repeat;
+  background-size: cover;
+}
+
+.main .first__screen-content {
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .first__screen-content-title {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.9);
+  padding-bottom: 20px;
+}
+
+.main .first__screen-content-title span {
+  display: block;
+}
+
+.main .first__screen-content-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 50px;
+}
+
+.main .first__screen-content-button {
+  width: 200px;
+  height: 45px;
+  background-color: #dec377;
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
