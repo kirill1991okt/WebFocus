@@ -2,9 +2,12 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrapper {
+  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -30,7 +33,7 @@
 }
 
 .header__leng_and_phone-leng span {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -137,12 +140,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
 }
 
 .main .first__screen {
   width: 100%;
   height: 650px;
-  background: url("/assets/main_screen/Главный экран.png") no-repeat;
+  background: url("/WebFocus/assets/main_screen/Главный экран.png") no-repeat center;
   background-size: cover;
 }
 
@@ -179,7 +183,7 @@
 }
 
 .main .first__screen-content-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -191,6 +195,7 @@
 .main .first__screen-content-button {
   width: 200px;
   height: 45px;
+  margin-bottom: 90px;
   background-color: #dec377;
   font-family: Commissioner;
   font-style: normal;
@@ -203,5 +208,134 @@
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+.main .first__screen-content-button:hover {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  color: #dec377;
+  background: #ffffff;
+  border: 2px solid #dec377;
+  border-radius: 2px;
+}
+
+.main .first__screen-content-button-slider {
+  display: none;
+  margin-bottom: 100px;
+}
+
+.main .first__screen-content-button-slider-left, .main .first__screen-content-button-slider-right {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main .background {
+  background-color: #e5e5e5;
+  position: relative;
+}
+
+.main__advantages {
+  margin-top: -90px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__advantages-card {
+  width: 270px;
+  height: 285px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.main__advantages-card img {
+  padding-bottom: 25px;
+}
+
+.main__advantages-card span {
+  display: block;
+}
+
+.main__introduction {
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__introduction-content {
+  max-width: 540px;
+  margin: 50px 0 60px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__introduction-content-title {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 30px;
+}
+
+.main__introduction-content-subtitle {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 470px;
+}
+
+.main__introduction-content-subtitle span {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
