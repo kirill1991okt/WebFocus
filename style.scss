@@ -104,7 +104,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin subtitle1() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 600;
     size: 17px;
@@ -116,7 +116,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin subtitle2() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: normal;
     size: 16px;
@@ -128,7 +128,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Maintext() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 300;
     size: 15px;
@@ -139,7 +139,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Maintext_highlighted() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: normal;
     size: 15px;
@@ -150,7 +150,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Seconrytext() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 300;
     size: 14px;
@@ -162,7 +162,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Additionaltext() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 300;
     size: 13px;
@@ -186,7 +186,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Buttonadditional() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 600;
     size: 12px;
@@ -225,7 +225,6 @@ $Secondary: rgba(0, 0, 0, 0.5);
 @mixin buttonOnPage {
   width: 200px;
   height: 45px;
-  margin-bottom: 90px;
   background-color: $Accent;
   @include Button();
   border: 2px solid #dec377;
@@ -343,7 +342,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
   .first__screen {
     width: 100%;
     height: 650px;
-    background: url("./assets/main_screen/Главный\ экран.png") no-repeat center;
+    background: url('./assets/main_screen/Главный\ экран.png') no-repeat center;
     background-size: cover;
 
     &-content {
@@ -455,7 +454,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 
     &-title {
       @include h2();
@@ -505,6 +504,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
             background: none;
             outline: none;
             border: none;
+            cursor: pointer;
           }
         }
       }
@@ -574,6 +574,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
   &__review {
     margin-top: 210px;
+    margin-bottom: 105px;
 
     &-title {
       @include h2;
@@ -598,7 +599,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 
         &::after {
-          content: url("./assets/review1.png");
+          content: url('./assets/review1.png');
           width: 100%;
           position: absolute;
           top: 0;
@@ -641,6 +642,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 
     &-contain {
       width: 100%;
@@ -662,6 +664,96 @@ $Secondary: rgba(0, 0, 0, 0.5);
       margin-top: 40px;
       display: flex;
       justify-content: space-around;
+      align-items: center;
+      mix-blend-mode: luminosity;
     }
+  }
+
+  // triangle
+
+  &__triangle {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+
+    &-cards {
+      display: flex;
+      flex-direction: column;
+
+      &-contain {
+        display: flex;
+        justify-content: space-between;
+
+        &-explain {
+          width: 100%;
+          max-width: 570px;
+          background: $Main_light;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+          padding: 40px 50px 55px 50px;
+
+          &-title {
+            @include h4();
+            margin-bottom: 15px;
+          }
+
+          &-subtitle {
+            @include Maintext();
+          }
+        }
+
+        &-protect {
+          position: relative;
+          width: 100%;
+          max-width: 570px;
+          background: $Main_light;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+          padding: 40px 50px 55px 50px;
+
+          &::after {
+            content: url('./assets/coner.svg');
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+
+          &-title {
+            @include h4();
+            margin-bottom: 15px;
+          }
+
+          &-subtitle {
+            @include Maintext();
+          }
+        }
+      }
+
+      &-pay {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 50px 45px 50px;
+        margin-top: 30px;
+        background: $Main_light;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+
+        &-title {
+          @include h4();
+          margin-bottom: 15px;
+        }
+
+        &-subtitle {
+          @include Maintext();
+          max-width: 720px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  .owl-dot {
+    background: #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
   }
 }

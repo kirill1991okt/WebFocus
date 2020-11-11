@@ -1,17 +1,19 @@
-$('.owl-carousel').owlCarousel({
+$('.main__direction-courusel .owl-carousel').owlCarousel({
     loop:true,
     items: 1,
     nav: true,
-    navigationText: ['<img src="./assets/icon/chevron-left.png" class="main__direction-btn main__direction-prev">','<img src="./assets/icon/chevron-right.png"  class="main__direction-btn main__direction-next">'],
+    navText: ['<img src="./assets/icon/chevron-left.png" class="main__direction-btn main__direction-prev">','<img src="./assets/icon/chevron-right.png"  class="main__direction-btn main__direction-next">'],
     dots: false,
 })
 
-// $('.owl-carousel').owlCarousel({
-//     loop:true,
-//     items: 2,
-//     nav: true,
-//     navigationText: ['<img src="./assets/icon/chevron-left.png" class="main__direction-btn main__direction-prev">','<img src="./assets/icon/chevron-right.png"  class="main__direction-btn main__direction-next">'],
-//     dots: true,
-//     margin: 30
-// })
+$('.main__review .owl-carousel').owlCarousel({
+    loop:true,
+    items: 2,
+    nav: true,
+    navigationText: ['<img src="./assets/icon/chevron-left.png" class="main__direction-btn main__direction-prev">','<img src="./assets/icon/chevron-right.png"  class="main__direction-btn main__direction-next">'],
+    dots: true,
+    dotsContainer: ".dots",
+    dotsEach: true,
+    margin: 30
+})
 
