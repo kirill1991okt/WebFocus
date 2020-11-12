@@ -33,7 +33,7 @@
 }
 
 .header__leng_and_phone-leng span {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -188,7 +188,7 @@
 }
 
 .main .first__screen-content-subtitle {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -278,7 +278,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -333,7 +333,7 @@
 }
 
 .main__introduction-content-subtitle {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -439,7 +439,7 @@
 }
 
 .main__activities-cards-card--inner button {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -518,7 +518,7 @@
 }
 
 .main__direction-content-subtitle div {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -552,7 +552,7 @@
   -webkit-transform: translate(0, -71%);
           transform: translate(0, -71%);
   outline: none;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -655,7 +655,7 @@
 
 .main__review-contain-block-wrap span {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -676,7 +676,7 @@
 }
 
 .main__review-contain-block-wrap-description {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -687,7 +687,7 @@
 }
 
 .main__review-contain-block-wrap-button {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -757,7 +757,7 @@
 
 .main__clients-contain-service {
   max-width: 670px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -862,7 +862,7 @@
 }
 
 .main__triangle-cards-contain-explain-subtitle {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -898,7 +898,7 @@
 }
 
 .main__triangle-cards-contain-protect-subtitle {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -931,7 +931,7 @@
 }
 
 .main__triangle-cards-pay-subtitle {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1009,7 +1009,7 @@
   position: absolute;
   bottom: 20px;
   right: 30px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1030,7 +1030,7 @@
 }
 
 .main__service-contain-card:nth-child(odd)::before {
-  content: " ";
+  content: ' ';
   height: 100%;
   width: 70px;
   background: rgba(222, 195, 119, 0.4);
@@ -1054,7 +1054,7 @@
 }
 
 .main__service-allServises-text {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1095,5 +1095,196 @@
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.main__background-trustProfit {
+  background: #ffffff;
+}
+
+.main__trustProfit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.main__trustProfit-trust {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 54px;
+}
+
+.main__trustProfit-trust-content {
+  height: 100%;
+  max-width: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+.main__trustProfit-trust-content-title {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 30px;
+}
+
+.main__trustProfit-trust-content-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main__trustProfit-trust-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 149px;
+}
+
+.main__trustProfit-trust-item-contain {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.75);
+  list-style-type: none;
+}
+
+.main__trustProfit-trust-item-contain-list {
+  padding: 5px 0 0 70px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main__trustProfit-trust-item-contain-list::before {
+  content: url("./assets/ul_circle.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main__trustProfit-profit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.main__trustProfit-profit-content {
+  height: 100%;
+  max-width: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+.main__trustProfit-profit-content-title {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 30px;
+}
+
+.main__trustProfit-profit-content-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main__trustProfit-profit-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 149px;
+}
+
+.main__trustProfit-profit-item-contain {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.75);
+  list-style-type: none;
+}
+
+.main__trustProfit-profit-item-contain-list {
+  padding: 5px 0 0 70px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main__trustProfit-profit-item-contain-list::before {
+  content: url("./assets/ul_circle.png");
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
