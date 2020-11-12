@@ -10,9 +10,9 @@ $('.main__review .owl-carousel').owlCarousel({
     loop:true,
     items: 2,
     nav: true,
-    navigationText: ['<img src="./assets/icon/chevron-left.png" class="main__direction-btn main__direction-prev">','<img src="./assets/icon/chevron-right.png"  class="main__direction-btn main__direction-next">'],
+    navText: ['<img src="./assets/icon/chevron-left.png" class="main__direction-btn main__direction-prev">','<img src="./assets/icon/chevron-right.png"  class="main__direction-btn main__direction-next">'],
     dots: true,
-    dotsContainer: ".dots",
+    dotsContainer: ".main__review .dots",
     dotsEach: true,
     margin: 30
 })

@@ -104,7 +104,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin subtitle1() {
   font: {
-    family: 'Lato', sans-serif;
+    family: "Lato", sans-serif;
     style: normal;
     weight: 600;
     size: 17px;
@@ -116,7 +116,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin subtitle2() {
   font: {
-    family: 'Lato', sans-serif;
+    family: "Lato", sans-serif;
     style: normal;
     weight: normal;
     size: 16px;
@@ -128,7 +128,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Maintext() {
   font: {
-    family: 'Lato', sans-serif;
+    family: "Lato", sans-serif;
     style: normal;
     weight: 300;
     size: 15px;
@@ -139,7 +139,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Maintext_highlighted() {
   font: {
-    family: 'Lato', sans-serif;
+    family: "Lato", sans-serif;
     style: normal;
     weight: normal;
     size: 15px;
@@ -150,7 +150,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Seconrytext() {
   font: {
-    family: 'Lato', sans-serif;
+    family: "Lato", sans-serif;
     style: normal;
     weight: 300;
     size: 14px;
@@ -162,7 +162,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Additionaltext() {
   font: {
-    family: 'Lato', sans-serif;
+    family: "Lato", sans-serif;
     style: normal;
     weight: 300;
     size: 13px;
@@ -186,7 +186,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Buttonadditional() {
   font: {
-    family: 'Lato', sans-serif;
+    family: "Lato", sans-serif;
     style: normal;
     weight: 600;
     size: 12px;
@@ -336,13 +336,14 @@ $Secondary: rgba(0, 0, 0, 0.5);
   display: flex;
   width: 100vw;
   flex-direction: column;
+  background: green;
 
   // first screen
 
   .first__screen {
     width: 100%;
     height: 650px;
-    background: url('./assets/main_screen/Главный\ экран.png') no-repeat center;
+    background: url("./assets/main_screen/Главный\ экран.png") no-repeat center;
     background-size: cover;
 
     &-content {
@@ -572,9 +573,14 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
   // review
 
+  .review {
+    background: $Main_light;
+  }
+
   &__review {
     margin-top: 210px;
     margin-bottom: 105px;
+    position: relative;
 
     &-title {
       @include h2;
@@ -599,7 +605,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 
         &::after {
-          content: url('./assets/review1.png');
+          content: url("./assets/review1.png");
           width: 100%;
           position: absolute;
           top: 0;
@@ -632,6 +638,39 @@ $Secondary: rgba(0, 0, 0, 0.5);
             cursor: pointer;
           }
         }
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      right: 0;
+      bottom: -14%;
+      transform: translate(0px, 2px);
+
+      .owl-prev,
+      .owl-next {
+        outline: none;
+        border: none;
+      }
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 3%;
+      right: 47%;
+      transform: translate(15px, 6px);
+
+      .owl-dot {
+        margin-left: 5px;
+        margin-right: 5px;
+        background: rgba(0, 0, 0, 0.1);
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .owl-dot.active {
+        background: $Accent;
       }
     }
   }
@@ -711,7 +750,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           padding: 40px 50px 55px 50px;
 
           &::after {
-            content: url('./assets/coner.svg');
+            content: url("./assets/coner.svg");
             position: absolute;
             top: 0;
             right: 0;
@@ -755,5 +794,87 @@ $Secondary: rgba(0, 0, 0, 0.5);
     width: 10px;
     height: 10px;
     border-radius: 50%;
+  }
+
+  // service
+  &__background-service {
+    background: #e5e5e5;
+    margin-top: 180px;
+  }
+
+  &__service {
+    margin-top: 80px;
+    margin-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      @include h2();
+      margin-bottom: 35px;
+    }
+
+    &-contain {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 30px;
+      margin-bottom: 50px;
+
+      &-card {
+        width: 100%;
+        position: relative;
+        background: $Main_light;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        padding-top: 25px;
+        padding-left: 100px;
+        @include h5();
+        a {
+          position: absolute;
+          bottom: 20px;
+          right: 30px;
+          @include Buttonadditional();
+          background: none;
+          outline: none;
+          border: none;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        &:nth-child(odd) {
+          height: 140px;
+          max-width: 470px;
+
+          &::before {
+            content: " ";
+            height: 100%;
+            width: 70px;
+            background: $Accent40;
+            position: absolute;
+            top: 0;
+            left: 0px;
+          }
+        }
+
+        &:nth-child(even) {
+          height: 140px;
+          max-width: 670px;
+        }
+      }
+    }
+
+    &-allServises {
+      display: flex;
+      justify-content: space-between;
+
+      &-text {
+        @include Maintext();
+        max-width: 770px;
+      }
+
+      &-button {
+        @include buttonOnPage();
+      }
+    }
   }
 }
