@@ -33,7 +33,7 @@
 }
 
 .header__leng_and_phone-leng span {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -188,7 +188,7 @@
 }
 
 .main .first__screen-content-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -278,7 +278,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -333,7 +333,7 @@
 }
 
 .main__introduction-content-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -439,7 +439,7 @@
 }
 
 .main__activities-cards-card--inner button {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -518,7 +518,7 @@
 }
 
 .main__direction-content-subtitle div {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -552,7 +552,7 @@
   -webkit-transform: translate(0, -71%);
           transform: translate(0, -71%);
   outline: none;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -655,7 +655,7 @@
 
 .main__review-contain-block-wrap span {
   display: block;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -676,7 +676,7 @@
 }
 
 .main__review-contain-block-wrap-description {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -687,7 +687,7 @@
 }
 
 .main__review-contain-block-wrap-button {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -757,7 +757,7 @@
 
 .main__clients-contain-service {
   max-width: 670px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -862,7 +862,7 @@
 }
 
 .main__triangle-cards-contain-explain-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -898,7 +898,7 @@
 }
 
 .main__triangle-cards-contain-protect-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -931,7 +931,7 @@
 }
 
 .main__triangle-cards-pay-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -997,6 +997,7 @@
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
   padding-top: 25px;
   padding-left: 100px;
+  padding-right: 45px;
   font-family: Commissioner;
   font-style: normal;
   font-weight: normal;
@@ -1009,7 +1010,7 @@
   position: absolute;
   bottom: 20px;
   right: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1024,13 +1025,13 @@
   cursor: pointer;
 }
 
-.main__service-contain-card:nth-child(odd) {
+.main__service-contain-card:nth-child(1) {
   height: 140px;
   max-width: 470px;
 }
 
-.main__service-contain-card:nth-child(odd)::before {
-  content: ' ';
+.main__service-contain-card:nth-child(1)::before {
+  content: " ";
   height: 100%;
   width: 70px;
   background: rgba(222, 195, 119, 0.4);
@@ -1039,9 +1040,139 @@
   left: 0px;
 }
 
-.main__service-contain-card:nth-child(even) {
+.main__service-contain-card:nth-child(2) {
   height: 140px;
   max-width: 670px;
+}
+
+.main__service-contain-card:nth-child(2)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: rgba(222, 195, 119, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(3) {
+  height: 140px;
+  max-width: 570px;
+}
+
+.main__service-contain-card:nth-child(3)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: rgba(222, 195, 119, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(4) {
+  height: 140px;
+  max-width: 570px;
+}
+
+.main__service-contain-card:nth-child(4)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: rgba(222, 195, 119, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(5) {
+  height: 140px;
+  max-width: 670px;
+}
+
+.main__service-contain-card:nth-child(5)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: #dec377;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(6) {
+  height: 140px;
+  max-width: 470px;
+}
+
+.main__service-contain-card:nth-child(6)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: #dec377;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(7) {
+  height: 140px;
+  max-width: 570px;
+}
+
+.main__service-contain-card:nth-child(7)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: rgba(222, 195, 119, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(8) {
+  height: 140px;
+  max-width: 570px;
+}
+
+.main__service-contain-card:nth-child(8)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: rgba(222, 195, 119, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(9) {
+  height: 140px;
+  max-width: 470px;
+}
+
+.main__service-contain-card:nth-child(9)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: rgba(222, 195, 119, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.main__service-contain-card:nth-child(10) {
+  height: 140px;
+  max-width: 670px;
+}
+
+.main__service-contain-card:nth-child(10)::before {
+  content: " ";
+  height: 100%;
+  width: 70px;
+  background: rgba(222, 195, 119, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0px;
 }
 
 .main__service-allServises {
@@ -1054,7 +1185,7 @@
 }
 
 .main__service-allServises-text {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1150,7 +1281,7 @@
 }
 
 .main__trustProfit-trust-content-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1170,6 +1301,7 @@
 }
 
 .main__trustProfit-trust-item-contain {
+  max-width: 440px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1178,7 +1310,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1237,7 +1369,7 @@
 }
 
 .main__trustProfit-profit-content-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -1265,7 +1397,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1286,5 +1418,105 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.main__background-plus {
+  background: #e5e5e5;
+}
+
+.main__plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.main__plus-title {
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.main__plus-contain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__plus-contain-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.main__plus-contain-cards-card {
+  height: 335px;
+  max-width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  text-align: center;
+  padding: 40px 20px 0 20px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.main__plus-contain-cards-card img {
+  padding-bottom: 25px;
+}
+
+.main__plus-contain-description {
+  position: relative;
+  padding: 40px 370px 45px 50px;
+  background: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main__plus-contain-description::before {
+  content: url("./assets/coner.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
