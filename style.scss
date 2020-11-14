@@ -104,7 +104,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin subtitle1() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 600;
     size: 16px;
@@ -116,7 +116,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin subtitle2() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: normal;
     size: 16px;
@@ -128,7 +128,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Maintext() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 300;
     size: 15px;
@@ -139,18 +139,18 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Maintext_highlighted() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: normal;
     size: 15px;
   }
   line-height: 25px;
-  color: $Secondary;
+  color: $MainText;
 }
 
 @mixin Seconrytext() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 300;
     size: 14px;
@@ -162,7 +162,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Additionaltext() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 300;
     size: 13px;
@@ -186,7 +186,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
 @mixin Buttonadditional() {
   font: {
-    family: "Lato", sans-serif;
+    family: 'Lato', sans-serif;
     style: normal;
     weight: 600;
     size: 12px;
@@ -239,6 +239,18 @@ $Secondary: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 0.4s;
   }
+}
+
+@mixin form {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: 500;
+    size: 13px;
+  }
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: $Secondary;
 }
 
 .wrapper {
@@ -343,7 +355,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
   .first__screen {
     width: 100%;
     height: 650px;
-    background: url("./assets/main_screen/Главный\ экран.png") no-repeat center;
+    background: url('./assets/main_screen/Главный\ экран.png') no-repeat center;
     background-size: cover;
 
     &-content {
@@ -605,7 +617,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 
         &::after {
-          content: url("./assets/review1.png");
+          content: url('./assets/review1.png');
           width: 100%;
           position: absolute;
           top: 0;
@@ -750,7 +762,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           padding: 40px 50px 55px 50px;
 
           &::after {
-            content: url("./assets/coner.svg");
+            content: url('./assets/coner.svg');
             position: absolute;
             top: 0;
             right: 0;
@@ -847,7 +859,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 470px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent40;
@@ -862,7 +874,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 670px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent40;
@@ -877,7 +889,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 570px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent75;
@@ -892,7 +904,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 570px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent75;
@@ -907,7 +919,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 670px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent;
@@ -922,7 +934,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 470px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent;
@@ -937,7 +949,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 570px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent75;
@@ -952,7 +964,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 570px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent75;
@@ -967,7 +979,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 470px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent40;
@@ -982,7 +994,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
           max-width: 670px;
 
           &::before {
-            content: " ";
+            content: ' ';
             height: 100%;
             width: 70px;
             background: $Accent40;
@@ -1057,14 +1069,14 @@ $Secondary: rgba(0, 0, 0, 0.5);
           flex-direction: column;
           @include subtitle1();
           list-style-type: none;
+          row-gap: 30px;
           // list-style-image: url('./assets/ul_circle.png');
 
           &-list {
             padding: 5px 0 0 70px;
-            margin-bottom: 30px;
             position: relative;
             &::before {
-              content: url("./assets/ul_circle.png");
+              content: url('./assets/ul_circle.png');
               position: absolute;
               top: 0;
               left: 0;
@@ -1108,14 +1120,14 @@ $Secondary: rgba(0, 0, 0, 0.5);
           flex-direction: column;
           @include subtitle1();
           list-style-type: none;
+          row-gap: 30px;
           // list-style-image: url('./assets/ul_circle.png');
 
           &-list {
             padding: 5px 0 0 70px;
-            margin-bottom: 30px;
             position: relative;
             &::before {
-              content: url("./assets/ul_circle.png");
+              content: url('./assets/ul_circle.png');
               position: absolute;
               top: 0;
               left: 0;
@@ -1127,7 +1139,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
   }
 
   // advantages
-  &__background-plus {
+  &__background-finish {
     background: #e5e5e5;
   }
 
@@ -1179,12 +1191,154 @@ $Secondary: rgba(0, 0, 0, 0.5);
         @include Maintext();
 
         &::before {
-          content: url("./assets/coner.svg");
+          content: url('./assets/coner.svg');
           position: absolute;
           top: 0;
           right: 0;
         }
       }
+    }
+  }
+
+  &__collaboration {
+    width: 100%;
+    display: flex;
+
+    &-contain {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &-organization {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          @include h2();
+          margin-bottom: 35px;
+        }
+
+        &-list {
+          counter-reset: number;
+          display: flex;
+          flex-direction: column;
+          row-gap: 30px;
+          padding-left: 100px;
+          margin-bottom: 35px;
+
+          &-item {
+            list-style: none;
+            @include Maintext_highlighted();
+
+            &::before {
+              // counter-increment: number;
+              // content: counter(number);
+              // font-family: Commissioner;
+              // font-style: normal;
+              // font-weight: 800;
+              // font-size: 22px;
+              // color: $Accent;
+              // border: 1px solid rgba(222, 195, 119, 0.75);
+            }
+          }
+        }
+
+        &-subtitle {
+          @include Seconrytext();
+        }
+      }
+
+      &-form {
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+
+        padding: 40px 50px 50px 50px;
+        background: $Main_light;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+
+        &-name {
+          width: 100%;
+          margin-bottom: 20px;
+
+          h6 {
+            @include form();
+            margin-bottom: 5px;
+          }
+
+          input {
+            width: 100%;
+            padding: 5px 10px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            outline: none;
+            @include Maintext();
+            color: $Secondary;
+            opacity: 0.6;
+          }
+        }
+
+        &-phone {
+          width: 100%;
+          margin-bottom: 20px;
+
+          h6 {
+            @include form();
+            margin-bottom: 5px;
+          }
+
+          input {
+            width: 100%;
+            padding: 5px 10px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            outline: none;
+            @include Maintext();
+            color: $Secondary;
+            opacity: 0.6;
+          }
+        }
+
+        &-politics {
+          @include Additionaltext();
+          margin-bottom: 30px;
+
+          span {
+            @include Additionaltext();
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+
+        &-button {
+          @include buttonOnPage();
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__cost {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    &-title {
+      @include h2();
+      margin-bottom: 30px;
+    }
+
+    &-subtitle {
+      @include Maintext();
+      margin-bottom: 30px;
+    }
+
+    &-button {
+      @include buttonOnPage();
     }
   }
 }
