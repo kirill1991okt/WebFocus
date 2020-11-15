@@ -253,6 +253,31 @@ $Secondary: rgba(0, 0, 0, 0.5);
   color: $Secondary;
 }
 
+@mixin footer {
+  font: {
+    family: 'Lato', sans-serif;
+    style: normal;
+    weight: normal;
+    size: 15px;
+  }
+  line-height: 25px;
+  text-transform: uppercase;
+  color: $Secondary;
+}
+
+@mixin footerTitle {
+  font: {
+    family: Commissioner;
+    style: normal;
+    weight: normal;
+    size: 14px;
+  }
+  letter-spacing: 0.04em;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: $Subtitle;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1170px;
@@ -271,10 +296,12 @@ $Secondary: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     margin-top: 10px;
     margin-bottom: 25px;
 
     &-leng {
+      width: 40%;
       span {
         @include Maintext();
       }
@@ -294,10 +321,11 @@ $Secondary: rgba(0, 0, 0, 0.5);
     }
 
     &-phone {
-      width: 100%;
-      max-width: 420px;
+      width: calc(40% + 49px);
+
       display: flex;
       justify-content: space-between;
+      margin-right: -49px;
       a {
         @include Overline();
         text-decoration: none;
@@ -348,22 +376,46 @@ $Secondary: rgba(0, 0, 0, 0.5);
   display: flex;
   width: 100vw;
   flex-direction: column;
-  background: green;
+  background: url(./assets/main_background.png) no-repeat;
+  background-attachment: fixed;
 
   // first screen
 
   .first__screen {
     width: 100%;
-    height: 650px;
-    background: url('./assets/main_screen/Главный\ экран.png') no-repeat center;
-    background-size: cover;
+    position: relative;
+    // height: 650px;
+    // background: url('./assets/main_screen/Главный\ экран.png') no-repeat center;
+    // background-size: cover;
+
+    .owl-carousel {
+      z-index: 0;
+    }
+
+    .owl-nav {
+      position: absolute;
+      bottom: 15%;
+      left: 19%;
+      transform: translate(10px, 1px);
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
 
     &-content {
-      height: 650px;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: flex-start;
+      position: absolute;
+      transform: translateY(4px);
+      top: 24%;
 
       &-title {
         span {
@@ -562,20 +614,16 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
       .owl-nav {
         .owl-prev {
-          font-size: 64px;
           position: absolute;
-          top: 50%;
-          left: -60px;
-          transform: translate(0, -71%);
+          top: 41%;
+          left: -100px;
           outline: none;
         }
 
         .owl-next {
-          font-size: 64px;
           position: absolute;
-          top: 50%;
-          right: -60px;
-          transform: translate(0, -71%);
+          top: 41%;
+          right: -100px;
           outline: none;
           @include Seconrytext();
         }
@@ -816,7 +864,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
   &__service {
     margin-top: 80px;
-    margin-bottom: 105px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
 
@@ -1031,7 +1079,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
 
     &-trust {
       width: 100%;
@@ -1230,16 +1278,40 @@ $Secondary: rgba(0, 0, 0, 0.5);
           &-item {
             list-style: none;
             @include Maintext_highlighted();
+            position: relative;
+
+            // &:first-child::before {
+            //   content: url('./assets/Number1.png');
+            //   position: absolute;
+            //   top: 3px;
+            //   left: -100px;
+            // }
+
+            // &:last-child::before {
+            //   content: url('./assets/Number2.png');
+            //   position: absolute;
+            //   top: 3px;
+            //   left: -100px;
+            // }
 
             &::before {
-              // counter-increment: number;
-              // content: counter(number);
-              // font-family: Commissioner;
-              // font-style: normal;
-              // font-weight: 800;
-              // font-size: 22px;
-              // color: $Accent;
-              // border: 1px solid rgba(222, 195, 119, 0.75);
+              position: absolute;
+              top: 1px;
+              left: -100px;
+              width: 70px;
+              height: 70px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              counter-increment: number;
+              content: counter(number);
+              font-family: Commissioner;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 22px;
+              color: #dec377;
+              border: 1px solid rgba(222, 195, 119, 0.75);
             }
           }
         }
@@ -1303,7 +1375,7 @@ $Secondary: rgba(0, 0, 0, 0.5);
 
         &-politics {
           @include Additionaltext();
-          margin-bottom: 30px;
+          margin-bottom: 28px;
 
           span {
             @include Additionaltext();
@@ -1340,5 +1412,328 @@ $Secondary: rgba(0, 0, 0, 0.5);
     &-button {
       @include buttonOnPage();
     }
+  }
+}
+
+// footer
+.footer {
+  width: 100vw;
+  background: #e5e5e5;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  &__contain {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    &-mk {
+      display: flex;
+      flex-direction: column;
+      max-width: 270px;
+
+      &-title {
+        @include h5();
+        margin-bottom: 70px;
+      }
+
+      &-group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 59px;
+
+        &-unp {
+          span {
+            @include Caption();
+            padding-right: 15px;
+          }
+          @include Additionaltext();
+        }
+
+        &-rating {
+          span {
+            @include Caption();
+            padding-right: 15px;
+          }
+          @include Additionaltext();
+        }
+      }
+
+      &-social {
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+        margin-bottom: 47px;
+      }
+
+      &-button_map {
+        position: relative;
+        @include Buttonadditional();
+        border: none;
+        outline: none;
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+        margin-bottom: 30px;
+
+        &::after {
+          content: url('./assets/arrow.png');
+          position: absolute;
+          top: 1px;
+          right: 111px;
+        }
+      }
+
+      &-button_politics {
+        max-width: 162px;
+        position: relative;
+        @include Buttonadditional();
+        border: none;
+        outline: none;
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+
+        &::after {
+          content: url('./assets/arrow.png');
+          position: absolute;
+          top: 11px;
+          left: 177px;
+        }
+      }
+    }
+
+    &-office {
+      display: flex;
+      flex-direction: column;
+      margin-top: 35px;
+
+      &-title {
+        @include footer();
+        padding-bottom: 4px;
+      }
+
+      &-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 35px;
+        border-top: 1px solid $Detail;
+
+        &-contact {
+          max-width: 200px;
+          display: flex;
+          flex-direction: column;
+          margin-top: 29px;
+
+          &-title {
+            @include footerTitle();
+          }
+
+          &-phones {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            a {
+              @include Additionaltext();
+              text-decoration: none;
+            }
+          }
+
+          &-address {
+            margin-top: 20px;
+            span {
+              @include Caption();
+              color: $Subtitle;
+            }
+
+            address {
+              @include Additionaltext();
+              padding-top: 5px;
+              letter-spacing: 0.025em;
+            }
+          }
+
+          &-resident {
+            margin-top: 20px;
+            @include Caption();
+            color: $Subtitle;
+
+            a {
+              @include Additionaltext();
+              color: $MainText;
+              text-decoration: none;
+            }
+          }
+
+          &-mail {
+            margin-top: 20px;
+
+            a {
+              font-family: Commissioner;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 13px;
+              line-height: 20px;
+              color: $MainText;
+              text-decoration: none;
+            }
+          }
+        }
+
+        &-location1 {
+          margin-top: 29px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 35px;
+
+          &-group {
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+
+            &-title {
+              @include footerTitle();
+              margin-bottom: 10px;
+            }
+
+            &-address {
+              span {
+                @include Caption();
+                color: $Subtitle;
+              }
+
+              address {
+                @include Additionaltext();
+                padding-top: 5px;
+              }
+            }
+
+            &-mail {
+              margin-top: 5px;
+
+              a {
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 20px;
+                color: $MainText;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        &-location2 {
+          margin-top: 29px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 35px;
+
+          &-group {
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+
+            &-title {
+              @include footerTitle();
+              margin-bottom: 10px;
+            }
+
+            &-address {
+              span {
+                @include Caption();
+                color: $Subtitle;
+              }
+
+              address {
+                @include Additionaltext();
+                padding-top: 5px;
+              }
+            }
+
+            &-mail {
+              margin-top: 5px;
+
+              a {
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 20px;
+                color: $MainText;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-time {
+      display: flex;
+      flex-direction: column;
+      margin-top: 35px;
+
+      &-title {
+        @include footer();
+        padding-bottom: 4px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      &-work {
+        max-width: 170px;
+        margin-top: 29px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        &-people {
+          div {
+            @include Caption();
+            color: $Subtitle;
+            padding-bottom: 5px;
+          }
+          @include Additionaltext();
+        }
+
+        &-call {
+          div {
+            display: block;
+            padding-bottom: 5px;
+            @include Caption();
+            color: $Subtitle;
+          }
+          @include Additionaltext();
+        }
+
+        &-consultant {
+          div {
+            @include Caption();
+            color: $Subtitle;
+            padding-bottom: 5px;
+          }
+          @include Additionaltext();
+        }
+      }
+    }
+  }
+
+  &__digital {
+    padding-top: 17px;
+    padding-bottom: 18px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $MainText;
   }
 }
