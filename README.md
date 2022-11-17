@@ -1,3 +1,9 @@
 # WebFocus-layout
 
-[https://kirill1991okt.github.io/WebFocus/](https://kirill1991okt.github.io/WebFocus/)
+[Main page](https://kirill1991okt.github.io/WebFocus/)
+
+## Technologies:
+
+- HTML
+- SCSS
+- CSS
